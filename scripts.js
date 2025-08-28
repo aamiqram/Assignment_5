@@ -53,13 +53,6 @@
         });
 
         // Functionality: Copy Buttons - Copy number to clipboard, show alert, increase copy count
-        // Step-by-step explanation for copy functionality:
-        // 1. Find the closest card element.
-        // 2. Extract the hotline number from the card.
-        // 3. Use navigator.clipboard.writeText to copy the number to the clipboard.
-        // 4. On success, show an alert confirming the copy and increment the copy count.
-        // 5. Update the navbar counts.
-        // 6. If copy fails, log an error (e.g., due to browser permissions).
         copyBtns.forEach(btn => {
             btn.addEventListener('click', (e) => {
                 const card = e.target.closest('.card');
