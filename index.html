@@ -7,8 +7,150 @@
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .badge-primary {
+            background-color: #3abff8;
+            color: white;
+        }
+        .btn-success {
+            background-color: #00C853;
+            color: white;
+        }
+        .btn-outline {
+            border-color: #3ABFF8;
+            color: #3ABFF8;
+        }
+        .card {
+            border: 1px solid #E0E0E0;
+            border-radius: 12px;
+        }
+    </style>
 </head>
-<body>
-    
+<body class="bg-[#41FF6B1A]">
+    <header>
+        <!-- Navbar Section -->
+    <nav class="bg-white text-white p-4 flex justify-between items-center px-16 py-6">
+        <div class="flex items-center">
+            <img src="assets/logo.png" alt="Logo" class="w-14 h-14 mr-2">
+            <span class="text-green-900 font-extrabold text-2xl">Emergency <br>Service</span>
+        </div>
+        <div class="flex items-center space-x-4">
+            <span class="flex-row justify-center w-[127px] h-[52] p-4 font-extrabold text-2xl  text-black rounded-full bg-[#41FF6B1A]" id="heart-count"><img class="w-8 h-8 mr-2" src="assets/heart.png" alt="Heart"> 0</span>
+            <span class="flex-row justify-between w-[127px] h-[52] px-5 py-3 text-black font-extrabold text-2xl rounded-full bg-[#41FF6B1A]" id="coin-count"><img class="w-8 h-8 mr-2" src="assets/coin.png" alt="Coin"> 100</span>
+            <span class="w-[127px] h-[52] px-9 py-3 text-white font-bold rounded-full bg-[#00A63E]" id="copy-count"> 0</span>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-[#013223] to-[#006747] text-white text-center px-16 py-4">
+        <img src="assets/logo-dark.png" alt="Bangladesh Logo" class="w-24 h-24 mx-auto mb-4">
+        <h1 class="text-4xl font-bold">Emergency Service Directory</h1>
+        <p class="text-lg mt-2">Government Emergency Services at Your Fingertip - A Project by Government of the People's Republic of Bangladesh</p>
+    </section>
+    </header>
+    <!-- Main Section -->
+    <main class="container w-full h-auto mx-auto p-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <!-- Card Section -->
+        <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-6">
+            <!-- Card 1: National Emergency -->
+            <div class="card bg-white shadow-lg rounded-lg p-8">
+                <div class="flex justify-between items-start">
+                    <img class="h-16 w-16 rounded-2xl" src="assets/emergency.png" alt="National Icon" class="mb-2">
+                    <button class="text-gray-400 favorite"><img class="h-6 w-6" src="assets/heart.png" alt=""></button>
+                </div>
+                <h3 class="font-bold mt-6">জাতীয় জরুরী</h3>
+                <p class="text-sm text-gray-600">National Emergency</p>
+                <p class="text-xl">999</p>
+                <span class="badge badge-primary">National</span>
+                <div class="flex justify-center mt-4 space-x-2">
+                    <button class="btn btn-outline btn-sm copy-btn">Copy</button>
+                    <button class="btn btn-success btn-sm call-btn">Call</button>
+                </div>
+            </div>
+            <!-- Card 2: Police -->
+            <div class="card bg-white shadow-lg rounded-lg p-8">
+                <div class="flex justify-between items-start">
+                    <img class="h-16 w-16 rounded-2xl" src="assets/police.png" alt="Police Icon" class="mb-2">
+                    <button class="text-gray-400 favorite"><img class="h-6 w-6" src="assets/heart.png" alt=""></button>
+                </div>
+                <h3 class="font-bold">পুলিশ</h3>
+                <p class="text-sm text-gray-600">Police</p>
+                <p class="text-xl">999</p>
+                <span class="badge badge-primary">Police</span>
+                <div class="flex justify-center mt-4 space-x-2">
+                    <button class="btn btn-outline btn-sm copy-btn">Copy</button>
+                    <button class="btn btn-success btn-sm call-btn">Call</button>
+                </div>
+            </div>
+            <!-- Card 3: Fire Service -->
+            <div class="card bg-white shadow-lg rounded-lg p-8">
+                <div class="flex justify-between items-start">
+                    <img class="h-16 w-16 rounded-2xl" src="assets/fire-service.png" alt="Fire Icon" class="mb-2">
+                    <button class="text-gray-400 favorite"><img class="h-6 w-6" src="assets/heart.png" alt=""></button>
+                </div>                
+                <h3 class="font-bold">ফায়ার সার্ভিস</h3>
+                <p class="text-sm text-gray-600">Fire Service</p>
+                <p class="text-xl">999</p>
+                <span class="badge badge-primary">Fire</span>
+                <div class="flex justify-center mt-4 space-x-2">
+                    <button class="btn btn-outline btn-sm copy-btn">Copy</button>
+                    <button class="btn btn-success btn-sm call-btn">Call</button>
+                </div>
+            </div>
+            <!-- Card 4: Ambulance -->
+            <div class="card bg-white shadow-lg rounded-lg p-8">
+                <div class="flex justify-between items-start">
+                    <img class="h-16 w-16 rounded-2xl" src="assets/ambulance.png" alt="Ambulance Icon" class="mb-2">
+                    <button class="text-gray-400 favorite"><img class="h-6 w-6" src="assets/heart.png" alt=""></button>
+                </div>                
+                <h3 class="font-bold">অ্যাম্বুলেন্স</h3>
+                <p class="text-sm text-gray-600">Ambulance</p>
+                <p class="text-xl">16263</p>
+                <span class="badge badge-primary">Health</span>
+                <div class="flex justify-center mt-4 space-x-2">
+                    <button class="btn btn-outline btn-sm copy-btn">Copy</button>
+                    <button class="btn btn-success btn-sm call-btn">Call</button>
+                </div>
+            </div>
+            <!-- Card 5: Women Helpline -->
+            <div class="card bg-white shadow-lg rounded-lg p-8">
+                <div class="flex justify-between items-start">
+                    <img class="h-16 w-16 rounded-2xl" src="assets/brac.png" alt="Brac Icon" class="mb-2">
+                    <button class="text-gray-400 favorite"><img class="h-6 w-6" src="assets/heart.png" alt=""></button>
+                </div>                
+                <h3 class="font-bold">মহিলা হেল্পলাইন</h3>
+                <p class="text-sm text-gray-600">Women Helpline</p>
+                <p class="text-xl">109</p>
+                <span class="badge badge-primary">Women</span>
+                <div class="flex justify-center mt-4 space-x-2">
+                    <button class="btn btn-outline btn-sm copy-btn">Copy</button>
+                    <button class="btn btn-success btn-sm call-btn">Call</button>
+                </div>
+            </div>
+            <!-- Card 6: Railway -->
+            <div class="card bg-white shadow-lg rounded-lg p-8">
+                <div class="flex justify-between items-start">
+                    <img class="h-16 w-16 rounded-2xl"  src="assets/Bangladesh-Railway.png" alt="Bangladesh-Railway Icon" class="mb-2">
+                    <button class="text-gray-400 favorite"><img class="h-6 w-6" src="assets/heart.png" alt=""></button>
+                </div>                
+                <h3 class="font-bold">বাংলাদেশ রেলওয়ে</h3>
+                <p class="text-sm text-gray-600">Bangladesh-Railway</p>
+                <p class="text-xl">106</p>
+                <span class="badge badge-primary">Bangladesh-Railway</span>
+                <div class="flex justify-center mt-4 space-x-2">
+                    <button class="btn btn-outline btn-sm copy-btn">Copy</button>
+                    <button class="btn btn-success btn-sm call-btn">Call</button>
+                </div>
+            </div>
+        </div>
+        <!-- History Section -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="font-bold">Call History</h2>
+                <button class="btn btn-outline btn-sm clear-history">Clear</button>
+            </div>
+            <ul id="history-list" class="space-y-2"></ul>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
 </body>
 </html>
