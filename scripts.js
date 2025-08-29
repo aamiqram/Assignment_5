@@ -1,11 +1,11 @@
- // Initializing variables
-        let favorites = 0;
+ // Variables
+        let favourites = 0;
         let coins = 100;
         let copies = 0;
         const history = [];
 
         // Selected elements
-        const favoriteBtns = document.querySelectorAll('.favorite');
+        const favouriteBtns = document.querySelectorAll('.favourite');
         const callBtns = document.querySelectorAll('.call-btn');
         const copyBtns = document.querySelectorAll('.copy-btn');
         const clearBtn = document.querySelector('.clear-history');
@@ -16,16 +16,15 @@
 
         // Function to update navbar counts
         function updateCounts() {
-            heartCount.innerHTML = `${favorites} <img class="w-8 h-8 mr-1" src="assets/heart.png" alt="Heart">`;
-            coinCount.innerHTML = `${coins} <img class="w-8 h-8 mr-1" src="assets/coin.png" alt="Coin">`;
-            copyCount.innerHTML = `${copies} Copy`;
+            heartCount.innerHTML = `${favourites} <img class="w-8 h-8 ml-1 mr-2" src="assets/heart.png" alt="Heart">`;
+            coinCount.innerHTML = `${coins} <img class="w-8 h-8 ml-1 mr-2" src="assets/coin.png" alt="Coin">`;
+            copyCount.innerHTML = `${copies} <p class="font-bold ml-1">Copy</p>`;
         }
 
         // Functionality: Heart Icons - Clicking increases the heart count in navbar
-        favoriteBtns.forEach(btn => {
+        favouriteBtns.forEach(btn => {
             btn.addEventListener('click', () => {
-                favorites++;
-                btn.classList.add('text-red-500'); // Optional: Change color on click
+                favourites++;
                 updateCounts();
             });
         });
