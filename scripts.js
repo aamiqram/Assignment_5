@@ -1,10 +1,10 @@
- // Initialize variables
+ // Initializing variables
         let favorites = 0;
         let coins = 100;
         let copies = 0;
         const history = [];
 
-        // Select elements
+        // Selected elements
         const favoriteBtns = document.querySelectorAll('.favorite');
         const callBtns = document.querySelectorAll('.call-btn');
         const copyBtns = document.querySelectorAll('.copy-btn');
@@ -18,7 +18,7 @@
         function updateCounts() {
             heartCount.innerHTML = `${favorites} <img class="w-8 h-8 mr-1" src="assets/heart.png" alt="Heart">`;
             coinCount.innerHTML = `${coins} <img class="w-8 h-8 mr-1" src="assets/coin.png" alt="Coin">`;
-            copyCount.textContent = `${copies} Copy`;
+            copyCount.innerHTML = `${copies} Copy`;
         }
 
         // Functionality: Heart Icons - Clicking increases the heart count in navbar
@@ -45,7 +45,7 @@
 
                 alert(`Calling ${serviceEnglish} (${serviceName}) at ${serviceNumber}`);
                 coins -= 20;
-                const currentTime = new Date().toLocaleTimeString(); // Get exact local time
+                const currentTime = new Date().toLocaleTimeString(); // To Get exact local time
                 history.push({ name: `${serviceEnglish} (${serviceName})`, number: serviceNumber, time: currentTime });
                 updateHistory();
                 updateCounts();
@@ -74,7 +74,7 @@
             updateHistory();
         });
 
-        // Function to update the call history list dynamically
+        // Function to update the call history list
         function updateHistory() {
             historyList.innerHTML = '';
             history.forEach(item => {

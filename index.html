@@ -5,36 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency-Hotline-Service</title>
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <!-- daisyui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style>
-        .badge-primary {
-            background-color: #3ABFF8;
-            color: white;
-        }
-        .btn-success {
-            background-color: #00C853;
-            color: white;
-        }
-        .btn-outline {
-            border-color: #3ABFF8;
-            color: #3ABFF8;
-        }
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
         .card {
             border: 1px solid #E0E0E0;
             border-radius: 12px;
+            padding: 32px;
         }
     </style>
 </head>
 <body class="bg-[#41FF6B1A]">
     <header>
-        <!-- Navbar Section -->
+    <!-- Navbar Section -->
     <nav class="bg-white text-white flex justify-between items-center p-4">
         <div class="flex items-center">
             <img src="assets/logo.png" alt="Logo" class="w-14 h-14 mr-2">
             <span class="text-green-900 font-extrabold text-2xl">Emergency <br>Service</span>
         </div>
-        <div class="md:flex items-center space-x-4 sm:grid">
+        <div class="flex items-center space-x-4">
             <span class="flex-row justify-center p-4 font-extrabold text-2xl  text-black rounded-full bg-[#41FF6B1A]" id="heart-count"><img class="w-8 h-8 mr-2" src="assets/heart.png" alt="Heart"> 0</span>
             <span class="flex-row justify-between px-5 py-4 text-black font-extrabold text-2xl rounded-full bg-[#41FF6B1A]" id="coin-count"><img class="w-8 h-8 mr-2" src="assets/coin.png" alt="Coin"> 100</span>
             <span class="px-8 py-4 text-white font-bold rounded-full bg-[#00A63E]" id="copy-count"> 0</span>
@@ -57,13 +49,13 @@
                     <img class="h-16 w-16 rounded-2xl" src="assets/emergency.png" alt="National Icon" class="mb-2">
                     <button class="text-gray-400 favorite"><img class="h-6 w-6" src="assets/heart.png" alt=""></button>
                 </div>
-                <h3 class="font-bold mt-6">জাতীয় জরুরী</h3>
+                <h3 class="font-bold mt-6">জাতীয় জরুরী অবস্থা</h3>
                 <p class="text-sm text-gray-600">National Emergency</p>
-                <p class="text-xl">999</p>
-                <span class="badge badge-primary">National</span>
+                <p class="text-xl">111</p>
+                <span class="badge bg-gray-200">National</span>
                 <div class="flex justify-center mt-4 space-x-2">
-                    <button class="btn btn-outline btn-sm copy-btn">Copy</button>
-                    <button class="btn btn-success btn-sm call-btn">Call</button>
+                    <button class="w-40 h-12 px-8 py-4 text-black font-bold rounded-xl bg-white btn btn-sm copy-btn"><i class="fa-regular fa-copy"></i>Copy</button>
+                    <button class="w-40 h-12 px-8 py-4 text-white font-bold rounded-xl bg-[#00A63E] btn btn-sm call-btn"><i class="fa-solid fa-phone"></i>Call</button>
                 </div>
             </div>
             <!-- Card 2: Police -->
@@ -72,13 +64,13 @@
                     <img class="h-16 w-16 rounded-2xl" src="assets/police.png" alt="Police Icon" class="mb-2">
                     <button class="text-gray-400 favorite"><img class="h-6 w-6" src="assets/heart.png" alt=""></button>
                 </div>
-                <h3 class="font-bold">পুলিশ</h3>
+                <h3 class="font-bold mt-6">পুলিশ</h3>
                 <p class="text-sm text-gray-600">Police</p>
                 <p class="text-xl">999</p>
-                <span class="badge badge-primary">Police</span>
+                <span class="badge bg-gray-200">Police</span>
                 <div class="flex justify-center mt-4 space-x-2">
-                    <button class="btn btn-outline btn-sm copy-btn">Copy</button>
-                    <button class="btn btn-success btn-sm call-btn">Call</button>
+                    <button class="w-40 h-12 px-8 py-4 text-black font-bold rounded-xl bg-white btn btn-sm copy-btn"><i class="fa-regular fa-copy"></i>Copy</button>
+                    <button class="w-40 h-12 px-8 py-4 text-white font-bold rounded-xl bg-[#00A63E] btn btn-sm call-btn"><i class="fa-solid fa-phone"></i>Call</button>
                 </div>
             </div>
             <!-- Card 3: Fire Service -->
@@ -89,11 +81,11 @@
                 </div>                
                 <h3 class="font-bold">ফায়ার সার্ভিস</h3>
                 <p class="text-sm text-gray-600">Fire Service</p>
-                <p class="text-xl">999</p>
-                <span class="badge badge-primary">Fire</span>
+                <p class="text-xl">121</p>
+                <span class="badge bg-gray-200">Fire</span>
                 <div class="flex justify-center mt-4 space-x-2">
-                    <button class="btn btn-outline btn-sm copy-btn">Copy</button>
-                    <button class="btn btn-success btn-sm call-btn">Call</button>
+                    <button class="w-40 h-12 px-8 py-4 text-black font-bold rounded-xl bg-white btn btn-sm copy-btn"><i class="fa-regular fa-copy"></i>Copy</button>
+                    <button class="w-40 h-12 px-8 py-4 text-white font-bold rounded-xl bg-[#00A63E] btn btn-sm call-btn"><i class="fa-solid fa-phone"></i>Call</button>
                 </div>
             </div>
             <!-- Card 4: Ambulance -->
@@ -105,10 +97,10 @@
                 <h3 class="font-bold">অ্যাম্বুলেন্স</h3>
                 <p class="text-sm text-gray-600">Ambulance</p>
                 <p class="text-xl">16263</p>
-                <span class="badge badge-primary">Health</span>
+                <span class="badge bg-gray-200">Health</span>
                 <div class="flex justify-center mt-4 space-x-2">
-                    <button class="btn btn-outline btn-sm copy-btn">Copy</button>
-                    <button class="btn btn-success btn-sm call-btn">Call</button>
+                    <button class="w-40 h-12 px-8 py-4 text-black font-bold rounded-xl bg-white btn btn-sm copy-btn"><i class="fa-regular fa-copy"></i>Copy</button>
+                    <button class="w-40 h-12 px-8 py-4 text-white font-bold rounded-xl bg-[#00A63E] btn btn-sm call-btn"><i class="fa-solid fa-phone"></i>Call</button>
                 </div>
             </div>
             <!-- Card 5: Women Helpline -->
@@ -120,10 +112,10 @@
                 <h3 class="font-bold">মহিলা হেল্পলাইন</h3>
                 <p class="text-sm text-gray-600">Women Helpline</p>
                 <p class="text-xl">109</p>
-                <span class="badge badge-primary">Women</span>
+                <span class="badge bg-gray-200">Women</span>
                 <div class="flex justify-center mt-4 space-x-2">
-                    <button class="btn btn-outline btn-sm copy-btn">Copy</button>
-                    <button class="btn btn-success btn-sm call-btn">Call</button>
+                    <button class="w-40 h-12 px-8 py-4 text-black font-bold rounded-xl bg-white btn btn-sm copy-btn"><i class="fa-regular fa-copy"></i>Copy</button>
+                    <button class="w-40 h-12 px-8 py-4 text-white font-bold rounded-xl bg-[#00A63E] btn btn-sm call-btn"><i class="fa-solid fa-phone"></i>Call</button>
                 </div>
             </div>
             <!-- Card 6: Railway -->
@@ -135,18 +127,18 @@
                 <h3 class="font-bold">বাংলাদেশ রেলওয়ে</h3>
                 <p class="text-sm text-gray-600">Bangladesh-Railway</p>
                 <p class="text-xl">106</p>
-                <span class="badge badge-primary">Bangladesh-Railway</span>
+                <span class="badge bg-gray-200">Bangladesh-Railway</span>
                 <div class="flex justify-center mt-4 space-x-2">
-                    <button class="btn btn-outline btn-sm copy-btn">Copy</button>
-                    <button class="btn btn-success btn-sm call-btn">Call</button>
+                    <button class="w-40 h-12 px-8 py-4 text-black font-bold rounded-xl bg-white btn btn-sm copy-btn"><i class="fa-regular fa-copy"></i>Copy</button>
+                    <button class="w-40 h-12 px-8 py-4 text-white font-bold rounded-xl bg-[#00A63E] btn btn-sm call-btn"><i class="fa-solid fa-phone"></i>Call</button>
                 </div>
             </div>
         </div>
         <!-- History Section -->
         <div class="bg-white shadow-lg rounded-lg p-6">
             <div class="flex justify-between items-center mb-4">
-                <h2 class="font-bold">Call History</h2>
-                <button class="btn btn-outline btn-sm clear-history">Clear</button>
+                <h2 class="font-bold"><i class="fa-regular fa-clock"></i>Call History</h2>
+                <button class="w-28 h-12 px-8 py-4 text-white font-bold rounded-full bg-[#00A63E] btn btn-sm clear-history">Clear</button>
             </div>
             <ul id="history-list" class="space-y-2"></ul>
         </div>
