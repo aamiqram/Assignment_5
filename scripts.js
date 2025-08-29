@@ -18,7 +18,7 @@
         function updateCounts() {
             heartCount.innerHTML = `${favourites} <img class="w-8 h-8 ml-1 mr-2" src="assets/heart.png" alt="Heart">`;
             coinCount.innerHTML = `${coins} <img class="w-8 h-8 ml-1 mr-2" src="assets/coin.png" alt="Coin">`;
-            copyCount.innerHTML = `${copies} <p class="font-bold ml-1">Copy</p>`;
+            copyCount.innerHTML = `${copies} <p class="ml-1">Copy</p>`;
         }
 
         // Functionality: Heart Icons - Clicking increases the heart count in navbar
